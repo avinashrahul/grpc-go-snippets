@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+package greet;
+option go_package="greetpb";
+
+service GreetService {
+    rpc Greet(GreetRequest) returns (GreetResponse) {};
+    rpc Sum(SumRequest) returns (SumResponse) {};
+    rpc GreetManyTimes(GreetManyTimesRequest) returns (stream GreetManyTimesResponse) {};
+    rpc PrimeNumberDecomposition(PrimeNumberDecompositionRequest) returns (stream PrimeNumberDecompositionResponse) {};
+    rpc LongGreet(stream LongGreetRequest) returns (LongGreetResponse) {};
+    rpc ComputeAverage(stream ComputeAverageRequest) returns (ComputeAverageResponse) {};
+    rpc GreetEveryone(stream GreetEveryoneRequest) returns (stream GreetEveryoneResponse) {};
+    rpc doSquareRoot(SquareRootRequest) returns (SquareRootResponse) {};
+}
+
+message SquareRootRequest {
+    int32 number = 1;
+}
+
+
+message SquareRootResponse {
+    float response = 1;
+}
+
+message ComputeAverageRequest {
+    int32 number = 1;
+}
+
+message ComputeAverageResponse {
+    float result = 1;
+}
+
+message LongGreetRequest {
+    string first_name = 1;
+}
+
+message LongGreetResponse {
+    string result = 1;
+}
+
+message GreetEveryoneRequest {
+    string first_name = 1;
+}
+
+message GreetEveryoneResponse {
+    string result = 1;
+}
+
+message PrimeNumberDecompositionRequest {
+    int32 number = 1;
+}
+
+message PrimeNumberDecompositionResponse {
+    int32 result = 1;
+}
+
+message GreetManyTimesRequest {
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message GreetManyTimesResponse {
+    string result = 1;
+}
+
+message Greeting {
+    string first_name = 1;
+    string last_name = 2;
+}
+
+message GreetRequest {
+    Greeting greeting = 1;
+}
+
+message GreetResponse {
+    string result = 1;
+}
+
+message SumRequest {
+    int32 var_a = 1;
+    int32 var_b = 2;
+}
+
+message SumResponse {
+    int32 result = 1;
+}
