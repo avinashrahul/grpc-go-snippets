@@ -13,7 +13,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="14">
               <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
@@ -23,7 +23,7 @@
         <entry file="file://$PROJECT_DIR$/generate.sh">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
+              <caret column="48" selection-start-column="48" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -40,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/greet/greet_server/server.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2567">
-              <caret line="165" column="28" selection-start-line="165" selection-start-column="16" selection-end-line="165" selection-end-column="28" />
+            <state relative-caret-position="349">
+              <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -49,8 +49,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/greet/greet_client/client.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+            <state relative-caret-position="3434">
+              <caret line="209" column="6" selection-start-line="209" selection-start-column="4" selection-end-line="209" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -94,17 +94,21 @@
       <find>doSquareRootUnary</find>
       <find>course</find>
       <find>udemy</find>
+      <find>func</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="/usr/local/Cellar/go/1.14.3/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/generate.sh" />
         <option value="$PROJECT_DIR$/../../../golang.org/x/tools/go/ssa/interp/testdata/src/fmt/fmt.go" />
         <option value="$PROJECT_DIR$/greet/greetpb/greet.proto" />
-        <option value="$PROJECT_DIR$/greet/greet_server/server.go" />
         <option value="$PROJECT_DIR$/greet/greet_client/client.go" />
+        <option value="$PROJECT_DIR$/greet/greet_server/server.go" />
       </list>
     </option>
   </component>
@@ -113,6 +117,7 @@
     <option name="width" value="1920" />
     <option name="height" value="964" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -193,7 +198,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36576787" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23798358" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -231,13 +236,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.pb.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17017">
@@ -245,24 +243,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/greet/greet_server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2567">
-          <caret line="165" column="28" selection-start-line="165" selection-start-column="16" selection-end-line="165" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="48" lean-forward="true" selection-start-column="48" selection-end-column="48" />
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greet/greetpb/greet.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/greet/greet_server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="163" column="1" lean-forward="true" selection-start-line="163" selection-start-column="1" selection-end-line="163" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/greet/greet_client/client.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="14" lean-forward="true" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        <state relative-caret-position="3434">
+          <caret line="209" column="6" selection-start-line="209" selection-start-column="4" selection-end-line="209" selection-end-column="6" />
         </state>
       </provider>
     </entry>
