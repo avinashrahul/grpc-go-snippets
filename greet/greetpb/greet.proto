@@ -20,7 +20,7 @@ message SquareRootRequest {
 
 
 message SquareRootResponse {
-    float response = 1;
+    double response = 1;
 }
 
 message ComputeAverageRequest {

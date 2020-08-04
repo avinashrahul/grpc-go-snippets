@@ -4,6 +4,8 @@ import (
 	"context"
 	"github.com/personal/grpc-go/greet/greetpb"
 	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 	"io"
 	"log"
 	"time"
@@ -27,8 +29,8 @@ func main() {
 	//primeNumberStream(c)
 	//doClientStreaming(c)
 	//doComputeAverageClientStreaming(c)
-	doBiDiStreaming(c)
-	doSquareRoot
+	//doBiDiStreaming(c)
+	doSquareRootUnary(c)
 
 }
 
@@ -244,3 +246,32 @@ func doBiDiStreaming(c greetpb.GreetServiceClient) {
 
 	<-waitc
 }
+
+func doSquareRootUnary(conn greetpb.GreetServiceClient) {
+	log.Printf("In doSquareRootUnary function")
+	number := 10
+	req := greetpb.SquareRootRequest{
+		Number: int32(number),
+	}
+	resp, err := conn.DoSquareRoot(context.Background(), &req)
+
+	if err != nil {
+		respErr, ok := status.FromError(err)
+
+		if ok {
+			if respErr.Code() == codes.InvalidArgument {
+				log.Printf("Sent a negative number %v", number)
+				return
+			}
+
+		} else {
+			log.Fatalf("Some Bad happened..%v", respErr)
+			return
+		}
+	}
+
+	log.Printf("response returned is %v", resp.Response)
+
+}
+
+

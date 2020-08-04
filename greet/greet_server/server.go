@@ -7,6 +7,7 @@ import (
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"io"
+	"math"
 
 	//"github.com/prometheus/common/log"
 	"google.golang.org/grpc"
@@ -174,7 +175,7 @@ func(s *server) DoSquareRoot(ctx context.Context, req *greetpb.SquareRootRequest
 
 
 	return &greetpb.SquareRootResponse{
-		Response: float32(number),
+		Response: math.Sqrt(float64(number)),
 
 	}, nil
 }
